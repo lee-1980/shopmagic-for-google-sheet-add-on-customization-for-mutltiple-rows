@@ -67,6 +67,8 @@ class GoogleSheetsService {
 			[
 				'q'      => "mimeType='application/vnd.google-apps.spreadsheet'",
 				'fields' => 'files(id, name)',
+                'includeItemsFromAllDrives' => true,
+                'supportsAllDrives' => true,
 			]
 		);
 
